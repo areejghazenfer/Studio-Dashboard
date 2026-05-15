@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms &amp; Conditions — ASG App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --espresso:  #562A0E;
+      --driftwood: #C7B8A3;
+      --oat:       #E8DCCB;
+      --cream:     #F5F1EB;
+      --sage-mist: #BBCEB6;
+      --fern:      #7E9A73;
+      --forest:    #354620;
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'Nunito', system-ui, sans-serif;
+    }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--espresso);
+      line-height: 1.6;
+    }
+    nav {
+      background: rgba(245,241,235,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--oat);
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--espresso);
+      text-decoration: none;
+    }
+    .nav-logo em { font-style: italic; color: var(--fern); }
+    .nav-back {
+      font-size: 13px;
+      color: var(--espresso);
+      text-decoration: none;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 200ms;
+    }
+    .nav-back:hover { opacity: 1; }
+
+    .page-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 32px 100px;
+    }
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--oat);
+    }
+    .page-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--fern);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--espresso);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    h1 em { font-style: italic; }
+    .meta { font-size: 13px; color: var(--driftwood); }
+
+    .content h2 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--espresso);
+      margin: 48px 0 14px;
+      line-height: 1.2;
+    }
+    .content h2 em { font-style: italic; }
+    .content h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--espresso);
+      margin: 24px 0 10px;
+    }
+    .content p {
+      font-size: 15px;
+      color: #5a3e30;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .content ul, .content ol {
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    .content li {
+      font-size: 15px;
+      color: #5a3e30;
+      line-height: 1.8;
+      margin-bottom: 6px;
+    }
+    .content strong { color: var(--espresso); font-weight: 700; }
+    .content a { color: var(--fern); text-decoration: none; }
+    .content a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: white;
+      border-left: 4px solid var(--fern);
+      border-radius: 0 14px 14px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    .warning-box {
+      background: #fdf4f0;
+      border-left: 4px solid #d4845a;
+      border-radius: 0 14px 14px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .warning-box p { margin-bottom: 0; color: #7a3e20; }
+    .warning-box strong { color: #5a2a10; }
+
+    .disclaimer-block {
+      background: var(--espresso);
+      color: var(--oat);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin: 20px 0;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .crisis-box {
+      background: white;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin: 20px 0;
+      box-shadow: 0 2px 12px rgba(86,42,14,0.06);
+      border: 2px solid var(--sage-mist);
+    }
+    .crisis-box h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--forest);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .crisis-box p { margin-bottom: 8px; font-size: 14px; }
+    .crisis-box p:last-child { margin-bottom: 0; }
+
+    footer {
+      background: var(--espresso);
+      color: var(--driftwood);
+      padding: 40px 32px;
+      text-align: center;
+    }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .footer-links a { color: var(--driftwood); text-decoration: none; font-size: 13px; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy { font-size: 12px; color: rgba(199,184,163,0.5); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">ASG <em>app</em></a>
+  <a class="nav-back" href="index.html">← Back to home</a>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-header">
+    <div class="page-label">Legal</div>
+    <h1>Terms &amp; <em>Conditions</em></h1>
+    <p class="meta">Effective Date: [DATE] &nbsp;·&nbsp; Last Updated: [DATE]</p>
+  </div>
+
+  <div class="content">
+
+    <div class="highlight-box">
+      <p>These Terms and Conditions ("Terms") constitute a legally binding agreement between you and [Legal Entity Name] ("we", "us", "our", or "Developer") regarding your use of ASG (the "App"), a personal goal and task tracking application. By downloading, installing, accessing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+    </div>
+
+    <h2>1. Who <em>We Are</em></h2>
+    <p>ASG is developed and operated by [Legal Entity Name], a [entity type, e.g. sole proprietor / LLC] based in Virginia, United States. References to "we", "us", or "our" throughout this document refer to [Legal Entity Name].</p>
+
+    <h2>2. <em>Eligibility</em></h2>
+    <p>You must be at least 13 years of age to use the App. By using the App, you represent and warrant that you meet this age requirement. If you are under 18, you represent that you have obtained parental or guardian consent to use the App.</p>
+
+    <h2>3. Description of <em>Service</em></h2>
+    <p>ASG is a personal goal and task tracking tool. It lets you set quarterly goals, create tasks within those goals, track progress, and reflect at the end of each quarter. A visual character responds to your activity as a form of gentle, non-pressuring feedback.</p>
+    <p>The App is designed for personal, non-commercial use only. It is not a medical, psychological, or therapeutic tool. Nothing in the App should be treated as professional advice of any kind. See Section 9 for our full medical disclaimer.</p>
+
+    <h2>4. License Grant and <em>Restrictions</em></h2>
+    <h3>4.1 License</h3>
+    <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use the App on devices you own or control, solely for your personal, non-commercial use.</p>
+    <h3>4.2 Restrictions</h3>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Modify, reverse engineer, decompile, disassemble, or create derivative works of the App</li>
+      <li>Remove, alter, or obscure any proprietary notices from the App</li>
+      <li>Use the App for any illegal, harmful, or unauthorized purpose</li>
+      <li>Attempt to gain unauthorized access to any part of the App or its systems</li>
+      <li>Use automated scripts, bots, or similar tools to access the App</li>
+      <li>Interfere with or disrupt the App's functionality or servers</li>
+      <li>Reproduce, distribute, or publicly display the App or any part of it</li>
+      <li>Sell, rent, lease, sublicense, or transfer your rights to use the App</li>
+      <li>Use the App to harm minors in any way</li>
+      <li>Impersonate any person or entity, or misrepresent your affiliation with any person or entity</li>
+      <li>Upload or transmit viruses, malware, or other malicious code</li>
+      <li>Violate any applicable laws, regulations, or third-party rights</li>
+    </ul>
+
+    <h2>5. Your <em>Account</em></h2>
+    <h3>5.1 Account creation</h3>
+    <p>Some features may require you to create an account. You are responsible for keeping your login credentials secure and for all activity that occurs under your account. If you believe your account has been compromised, contact us immediately at <a href="mailto:your@email.com">[your@email.com]</a>.</p>
+    <p>You may not:</p>
+    <ul>
+      <li>Create an account on behalf of another person without their permission</li>
+      <li>Share your account with others</li>
+      <li>Use another person's account without permission</li>
+    </ul>
+    <h3>5.2 Accuracy of information</h3>
+    <p>You agree to provide accurate, current, and complete information during the onboarding process and to update such information to keep it accurate. We are not responsible for any issues arising from inaccurate information you provide.</p>
+
+    <h2>6. Subscriptions and <em>Payments</em></h2>
+    <h3>6.1 Subscription terms</h3>
+    <p>Certain features of the App require a paid subscription ("Premium Features"). Subscriptions are processed through Apple's App Store or Google Play Store and are subject to their respective terms and conditions.</p>
+    <h3>6.2 Payment and billing</h3>
+    <ul>
+      <li>Subscriptions are charged to your Apple App Store or Google Play Store account</li>
+      <li>Payment is charged upon confirmation of purchase</li>
+      <li>Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the end of the current billing period</li>
+      <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+      <li>You can manage or cancel your subscription at any time through your App Store or Play Store account settings</li>
+    </ul>
+    <h3>6.3 Free trials</h3>
+    <p>We may offer free trial periods for Premium Features. You will not be charged until the trial period ends. You can cancel at any time before the trial expires to avoid being charged. We reserve the right to modify or cancel free trial offers at any time.</p>
+    <h3>6.4 Refunds</h3>
+    <p>Refund requests are handled according to Apple's or Google's refund policies, as applicable. We do not process refunds directly.</p>
+    <h3>6.5 Price changes</h3>
+    <p>We reserve the right to change subscription pricing at any time. For existing subscribers, we will provide at least 30 days' notice before any price increase takes effect. Price changes will not apply to your current subscription period.</p>
+
+    <h2>7. Your <em>Content</em></h2>
+    <p>The goals, tasks, reflections, and any other content you create inside the App ("Your Content") belong to you.</p>
+    <p>By using the App, you grant us a limited, non-exclusive license to store and process Your Content solely for the purpose of providing the service to you. We do not sell, share, or use Your Content for advertising or any purpose beyond operating the App.</p>
+    <p>You are responsible for the content you create. You agree not to use the App to create or store content that is unlawful, harmful, or in violation of any third party's rights.</p>
+
+    <h2>8. Acceptable <em>Use</em></h2>
+    <p>You agree to use the App only for its intended personal, non-commercial purpose, in compliance with all applicable local, state, national, and international laws and regulations.</p>
+
+    <h2>9. Medical <em>Disclaimer</em></h2>
+    <div class="disclaimer-block">
+      THE APP IS NOT INTENDED TO PROVIDE MEDICAL, MENTAL HEALTH, OR THERAPEUTIC ADVICE. The goal tracking features, character feedback, and any in-app copy are for motivational and organizational purposes only and should not be considered a substitute for professional medical or mental health advice, diagnosis, or treatment.
+    </div>
+    <h3>9.2 Consult professionals</h3>
+    <p>Always seek the advice of qualified healthcare providers with questions regarding mental or physical health conditions. Never disregard professional medical advice or delay seeking it because of anything you see in this App.</p>
+    <h3>9.3 Emergency situations</h3>
+    <div class="crisis-box">
+      <h4>If you are in crisis, please reach out</h4>
+      <p><strong>United States Emergency:</strong> 911</p>
+      <p><strong>Suicide &amp; Crisis Lifeline:</strong> 988 (call or text, available 24/7)</p>
+      <p><strong>Crisis Text Line:</strong> Text HOME to 741741</p>
+    </div>
+    <p>The App is not designed for crisis intervention or emergency mental health support.</p>
+
+    <h2>10. Intellectual <em>Property</em></h2>
+    <h3>10.1 Ownership</h3>
+    <p>All rights in the App — including its design, code, character artwork, copy, visual assets, and underlying technology — are owned by [Legal Entity Name] or our licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
+    <h3>10.2 Your content</h3>
+    <p>You retain full ownership of the goals, tasks, and reflections you create. Content stored locally on your device is not transmitted to or accessed by us beyond what is necessary to provide the service.</p>
+    <h3>10.3 Trademarks</h3>
+    <p>The ASG name, character design, and any associated marks are the property of [Legal Entity Name]. You may not use them without our prior written permission.</p>
+
+    <h2>11. Third-Party <em>Services</em></h2>
+    <p>The App integrates with third-party services including RevenueCat, Supabase, Sentry, and PostHog. Your use of the App is also subject to the relevant app store terms (Apple App Store or Google Play Store).</p>
+    <p>We are not responsible for the availability, accuracy, content, or practices of any third-party services. Your use of third-party services is governed by their respective terms and privacy policies, which are linked in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>12. App Availability and <em>Changes</em></h2>
+    <p>We aim to keep the App available and functioning, but we do not guarantee uninterrupted access. The App may be unavailable due to maintenance, updates, or circumstances outside our control.</p>
+    <p>We may at any time change, add, or remove features, or discontinue the App entirely. We will provide reasonable notice where possible. If we discontinue the App, we will, where applicable, provide a pro-rated refund for any unused portion of a paid subscription period.</p>
+
+    <h2>13. <em>Feedback</em></h2>
+    <p>We welcome feedback, comments, and suggestions for improvements to the App. If you submit feedback, you acknowledge that we may use it without restriction or compensation to you. You grant us a perpetual, irrevocable, worldwide, royalty-free license to use, modify, and incorporate such feedback into our products and services.</p>
+
+    <h2>14. Disclaimer of <em>Warranties</em></h2>
+    <div class="disclaimer-block">
+      THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL IMPLIED WARRANTIES INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE ERROR-FREE, UNINTERRUPTED, OR FREE FROM DATA LOSS.
+    </div>
+
+    <h2>15. Limitation of <em>Liability</em></h2>
+    <div class="disclaimer-block">
+      TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, [LEGAL ENTITY NAME] AND ITS OWNERS, EMPLOYEES, AND CONTRACTORS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP, INCLUDING LOSS OF DATA, LOSS OF PROGRESS, BUSINESS INTERRUPTION, OR EMOTIONAL DISTRESS.
+    </div>
+    <p>Our total liability to you for any claim arising from your use of the App will not exceed the greater of: (a) the amount you paid us in the 12 months preceding the claim, or (b) $50 USD.</p>
+    <p>Some states do not allow limitations on liability or implied warranties. If you are in one of those states, some of the above may not apply to you.</p>
+
+    <h2>16. <em>Termination</em></h2>
+    <h3>16.1 Termination by you</h3>
+    <p>You may stop using the App at any time. To delete your account and associated data, contact us at <a href="mailto:your@email.com">[your@email.com]</a>. Note: deleting the App from your device does not automatically cancel a paid subscription — you must cancel directly through your Apple App Store or Google Play Store account settings.</p>
+    <h3>16.2 Termination by us</h3>
+    <p>We may suspend or terminate your access to the App immediately and without prior notice if you breach these Terms, if required by law, or if we discontinue the App. Upon termination, your right to use the App ends immediately.</p>
+    <h3>16.3 Survival</h3>
+    <p>Sections that by their nature should survive termination will remain in effect, including Sections 10, 13, 14, 15, and 18.</p>
+
+    <h2>17. Changes to <em>These Terms</em></h2>
+    <p>We may update these Terms from time to time. The "Last Updated" date at the top indicates when they were last revised. If we make meaningful changes, we will notify you by posting the updated Terms within the App. Your continued use of the App after changes take effect constitutes your acceptance of the revised Terms. If you do not agree to the updated Terms, stop using the App and cancel any active subscription.</p>
+
+    <h2>18. Governing Law and <em>Disputes</em></h2>
+    <p>These Terms are governed by the laws of the Commonwealth of Virginia, United States, without regard to conflict of law principles.</p>
+    <p>If you have a dispute with us, please contact us first at <a href="mailto:your@email.com">[your@email.com]</a>. We will make a good-faith effort to resolve it informally before pursuing any formal action.</p>
+    <p>If a dispute cannot be resolved informally, it will be submitted to binding arbitration in Virginia under the rules of the American Arbitration Association (AAA), rather than resolved in court — except that either party may seek relief in small claims court for eligible claims. You waive the right to participate in any class action lawsuit or class-wide arbitration.</p>
+    <p>Virginia residents may contact the Virginia Department of Agriculture and Consumer Services, Office of Consumer Protection, for assistance with consumer complaints.</p>
+
+    <h2>19. Apple and Google <em>Specific Terms</em></h2>
+    <h3>19.1 Apple App Store</h3>
+    <p>If you access the App through Apple's App Store, you acknowledge that:</p>
+    <ul>
+      <li>These Terms are between you and [Legal Entity Name], not Apple</li>
+      <li>Apple has no obligation to provide maintenance or support services for the App</li>
+      <li>Apple is not responsible for addressing any claims you have relating to the App</li>
+      <li>Apple is a third-party beneficiary of these Terms and may enforce them against you</li>
+    </ul>
+    <h3>19.2 Google Play Store</h3>
+    <p>If you access the App through Google Play, your use is also subject to Google Play's Terms of Service, available at <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank" rel="noopener">play.google.com</a>.</p>
+
+    <h2>20. <em>Miscellaneous</em></h2>
+    <p><strong>Entire agreement:</strong> These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and [Legal Entity Name] regarding the App.</p>
+    <p><strong>Severability:</strong> If any provision of these Terms is found unenforceable, the remaining provisions continue in full force.</p>
+    <p><strong>No waiver:</strong> Our failure to enforce any provision does not constitute a waiver of our right to enforce it later.</p>
+    <p><strong>Assignment:</strong> You may not transfer your rights or obligations under these Terms to anyone else. We may transfer ours in connection with a merger, acquisition, or sale of assets, with notice to you.</p>
+
+    <h2>21. <em>Contact</em></h2>
+    <p>
+      <strong>ASG App</strong><br>
+      [Legal Entity Name]<br>
+      Virginia, United States<br>
+      Email: <a href="mailto:your@email.com">[your@email.com]</a><br>
+      Website: <a href="index.html">[yourwebsite.com]</a>
+    </p>
+
+    <div class="disclaimer-block" style="margin-top: 40px;">
+      BY USING THE APP, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEM. IF YOU DO NOT AGREE, YOU MUST NOT ACCESS OR USE THE APP.
+    </div>
+
+    <p style="font-size: 13px; color: var(--driftwood); font-style: italic;">© 2026 ASG App. All rights reserved.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+  </div>
+  <p class="footer-copy">© 2026 ASG App. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
