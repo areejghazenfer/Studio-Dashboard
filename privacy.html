@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ASG App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --espresso:  #562A0E;
+      --driftwood: #C7B8A3;
+      --oat:       #E8DCCB;
+      --cream:     #F5F1EB;
+      --sage-mist: #BBCEB6;
+      --fern:      #7E9A73;
+      --forest:    #354620;
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'Nunito', system-ui, sans-serif;
+    }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--espresso);
+      line-height: 1.6;
+    }
+    nav {
+      background: rgba(245,241,235,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--oat);
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--espresso);
+      text-decoration: none;
+    }
+    .nav-logo em { font-style: italic; color: var(--fern); }
+    .nav-back {
+      font-size: 13px;
+      color: var(--espresso);
+      text-decoration: none;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 200ms;
+    }
+    .nav-back:hover { opacity: 1; }
+
+    .page-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 32px 100px;
+    }
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--oat);
+    }
+    .page-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--fern);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--espresso);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    h1 em { font-style: italic; }
+    .meta {
+      font-size: 13px;
+      color: var(--driftwood);
+    }
+
+    .content h2 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--espresso);
+      margin: 48px 0 14px;
+      line-height: 1.2;
+    }
+    .content h2 em { font-style: italic; }
+    .content p {
+      font-size: 15px;
+      color: #5a3e30;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .content ul, .content ol {
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    .content li {
+      font-size: 15px;
+      color: #5a3e30;
+      line-height: 1.8;
+      margin-bottom: 6px;
+    }
+    .content strong { color: var(--espresso); font-weight: 700; }
+
+    .highlight-box {
+      background: white;
+      border-left: 4px solid var(--fern);
+      border-radius: 0 14px 14px 0;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    .service-block {
+      background: white;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 12px rgba(86,42,14,0.06);
+    }
+    .service-name {
+      font-weight: 700;
+      color: var(--espresso);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .service-meta {
+      font-size: 13px;
+      color: #7a5c48;
+      line-height: 1.6;
+    }
+    .service-meta a {
+      color: var(--fern);
+      text-decoration: none;
+    }
+    .service-meta a:hover { text-decoration: underline; }
+
+    footer {
+      background: var(--espresso);
+      color: var(--driftwood);
+      padding: 40px 32px;
+      text-align: center;
+    }
+    .footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .footer-links a { color: var(--driftwood); text-decoration: none; font-size: 13px; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-copy { font-size: 12px; color: rgba(199,184,163,0.5); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">ASG <em>app</em></a>
+  <a class="nav-back" href="index.html">← Back to home</a>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-header">
+    <div class="page-label">Legal</div>
+    <h1>Privacy <em>Policy</em></h1>
+    <p class="meta">Effective Date: [DATE] &nbsp;·&nbsp; Last Updated: [DATE]</p>
+  </div>
+
+  <div class="content">
+
+    <div class="highlight-box">
+      <p>This is a personal habit and goal tracking app. We are committed to being transparent about how we handle your data. This policy explains what we collect, why we collect it, who we share it with, and what you can control.</p>
+    </div>
+
+    <h2>1. Information <em>We Collect</em></h2>
+
+    <p><strong>When you complete the onboarding process, we collect:</strong></p>
+    <ul>
+      <li>Basic profile information: Your name</li>
+      <li>App preferences: The habits, goals, projects, and ideas you create inside the app</li>
+      <li>Notification preferences: Whether you enable notifications and your preferred reminder time</li>
+      <li>Premium subscription data: Information about your trial and subscription status</li>
+    </ul>
+
+    <p><strong>Information automatically collected:</strong></p>
+    <ul>
+      <li>Device information: Platform (iOS/Android), operating system version, and app version</li>
+      <li>Usage analytics: How you interact with the app, collected through PostHog analytics</li>
+      <li>Error and performance data: Technical information about app crashes and errors, collected through Sentry</li>
+      <li>Purchase information: Subscription and payment data processed through RevenueCat and Apple or Google's payment systems</li>
+      <li>Conversion tracking data: Device identifiers (IDFA on iOS and equivalent identifiers on Android when permission is granted) and app events collected through Meta, TikTok, and Google for advertising measurement</li>
+    </ul>
+
+    <p><strong>Information stored locally on your device:</strong></p>
+    <ul>
+      <li>Your last opened timestamp, used to determine your character's state</li>
+      <li>Detailed notification preferences</li>
+      <li>Any data not yet synced to our backend</li>
+    </ul>
+
+    <h2>2. How We Use <em>Your Information</em></h2>
+    <ol>
+      <li><strong>Service delivery:</strong> To provide you with a personalized habit and goal tracking experience based on your name and in-app activity.</li>
+      <li><strong>App improvement:</strong> To analyze usage patterns and improve app functionality, design, and user experience through PostHog analytics.</li>
+      <li><strong>Customer support:</strong> To respond to your feedback and support requests.</li>
+      <li><strong>Subscription management:</strong> To process and manage your premium subscription through RevenueCat and Apple or Google's payment systems.</li>
+      <li><strong>Error monitoring:</strong> To identify and fix technical issues and bugs through Sentry.</li>
+      <li><strong>Notifications:</strong> To send you a daily check-in reminder at the time you selected. We do not send marketing messages through push notifications.</li>
+      <li><strong>Advertising measurement:</strong> To measure the performance of our external marketing campaigns in aggregate using anonymized device-level signals. We do not show ads inside the app and we do not use your personal content for ad targeting.</li>
+      <li><strong>Communication:</strong> To send you important updates about the app, if you have opted in.</li>
+    </ol>
+
+    <h2>3. Where Your <em>Data Lives</em></h2>
+    <p>Some data is stored locally on your device, including your notification preferences and last opened timestamp. This data does not leave your device.</p>
+    <p>Other data is stored on our backend (Supabase), including your name, onboarding responses, and subscription status. This data is associated with your account identifier and stored on secure servers.</p>
+    <p>Payment information is handled directly by Apple, Google, and RevenueCat. We do not store credit card or payment details on our own servers.</p>
+
+    <h2>4. Push <em>Notifications</em></h2>
+    <p>The app sends one daily check-in reminder notification. These notifications are:</p>
+    <ul>
+      <li>Scheduled based on the time or time of day you selected during onboarding</li>
+      <li>Adjustable at any time through app settings or your device settings</li>
+      <li>Not used to send marketing messages or advertisements</li>
+      <li>Completely optional — you can disable them at any time through your device settings</li>
+    </ul>
+
+    <h2>5. Advertising and <em>Conversion Tracking</em></h2>
+    <p>We run advertising campaigns on Meta (Facebook and Instagram), TikTok, and Google to help people discover the app. To measure whether our ads are working, these platforms collect certain device-level data when you install or open the app. This may include your device identifier (IDFA on iOS and equivalent identifiers on Android when permission is granted) and basic app events such as installs and opens.</p>
+    <p>This data is used only for ad measurement. We do not pass your name, habits, goals, or any personal content you create in the app to these platforms. We do not show ads inside the app.</p>
+    <p>On iOS, you will be asked for permission before any advertising tracking occurs through Apple's App Tracking Transparency (ATT) prompt. If you deny permission, no device identifier is shared with ad platforms.</p>
+    <p>You can manage tracking permissions at any time: <strong>Settings → Privacy and Security → Tracking</strong> on iOS.</p>
+
+    <h2>6. Cookies and <em>Tracking Technologies</em></h2>
+    <p>This app does not use cookies. However, our marketing website does.</p>
+    <p>When you visit our website, the following types of cookies and tracking technologies may be active:</p>
+    <ul>
+      <li><strong>Advertising cookies</strong>, placed by Meta, TikTok, and Google to measure how our ads perform. These track actions such as visiting the site or clicking through to download the app.</li>
+      <li><strong>Analytics cookies</strong>, to help us understand which version of our onboarding performs best. This data is aggregate and anonymized.</li>
+    </ul>
+    <p>You can control or disable cookies at any time through your browser settings. We do not use cookies to collect personally identifiable information and we do not sell cookie data to third parties.</p>
+
+    <h2>7. Third-Party <em>Services</em></h2>
+    <p>We use the following third-party services that may collect information:</p>
+
+    <div class="service-block">
+      <div class="service-name">RevenueCat</div>
+      <div class="service-meta">Purpose: Subscription and payment processing<br>Data shared: User identifier, purchase information, subscription status<br>Privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">Supabase</div>
+      <div class="service-meta">Purpose: Backend database<br>Data shared: Onboarding information associated with your account identifier<br>Privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">Sentry</div>
+      <div class="service-meta">Purpose: Error tracking and performance monitoring<br>Data shared: Error logs, device information, IP address, and app context<br>Privacy policy: <a href="https://sentry.io/privacy" target="_blank" rel="noopener">sentry.io/privacy</a></div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">PostHog</div>
+      <div class="service-meta">Purpose: Product analytics<br>Data shared: Usage patterns, user interactions, device information<br>Privacy policy: <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a></div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">Apple App Store &amp; Google Play Store</div>
+      <div class="service-meta">Purpose: Payment processing for subscriptions<br>Data shared: Payment information and purchase history, handled directly by Apple and Google</div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">Meta</div>
+      <div class="service-meta">Purpose: Advertising and conversion tracking<br>Data shared: Device identifiers (IDFA when permission granted), app events<br>Privacy policy: <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">facebook.com/privacy/policy</a></div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">TikTok</div>
+      <div class="service-meta">Purpose: Advertising and conversion tracking<br>Data shared: Device identifiers (IDFA when permission granted), app events<br>Privacy policy: <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener">tiktok.com/legal/privacy-policy</a></div>
+    </div>
+    <div class="service-block">
+      <div class="service-name">Google Ads</div>
+      <div class="service-meta">Purpose: Advertising and conversion tracking<br>Data shared: Device identifiers (IDFA when permission granted), app events<br>Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></div>
+    </div>
+
+    <h2>8. Data <em>Retention</em></h2>
+    <ul>
+      <li><strong>Local data:</strong> Remains on your device until you uninstall the app or clear app data.</li>
+      <li><strong>Backend data:</strong> Retained for as long as you have an active account. You can request deletion at any time by contacting us.</li>
+      <li><strong>Analytics and error data:</strong> Retained according to PostHog and Sentry's own policies, typically between 90 days and 2 years.</li>
+      <li><strong>Advertising data:</strong> Retained according to each ad platform's own policies.</li>
+    </ul>
+
+    <h2>9. Data <em>Security</em></h2>
+    <p>We implement reasonable measures to protect your information, including encrypted connections (HTTPS) for all data transmission, secure storage practices through our backend provider (Supabase), and limited access to personal data by authorized personnel only.</p>
+    <p>No method of transmission or storage is 100% secure. We cannot guarantee absolute security, but we will always act responsibly with any data we handle.</p>
+
+    <h2>10. Children's <em>Privacy</em></h2>
+    <p>This app is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the app and provided personal information, please contact us and we will take steps to address it.</p>
+
+    <h2>11. Your <em>Rights</em></h2>
+    <p>You can:</p>
+    <ul>
+      <li>Request access to the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data by contacting us</li>
+      <li>Opt out of advertising tracking through the ATT prompt or your device settings</li>
+      <li>Disable push notifications through app settings or your device settings</li>
+    </ul>
+    <p>California residents may have additional rights under CCPA. Please reach out if you have a specific request.</p>
+
+    <h2>12. Changes to <em>This Policy</em></h2>
+    <p>If we make meaningful changes to how we handle data, we will notify you by posting the updated policy within the app, updating the effective date at the top of this page, and sending a notification where required. Your continued use of the app after changes take effect constitutes your acceptance of the revised policy.</p>
+
+    <h2>13. <em>Contact</em></h2>
+    <p>
+      <strong>ASG App</strong><br>
+      Email: <a href="mailto:your@email.com" style="color: var(--fern);">[your@email.com]</a><br>
+      Website: <a href="index.html" style="color: var(--fern);">[yourwebsite.com]</a>
+    </p>
+
+    <p style="margin-top: 32px; font-size: 13px; color: var(--driftwood); font-style: italic;">By using this app, you acknowledge that you have read and understood this Privacy Policy and agree to the collection, use, and sharing of your information as described above.</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+  </div>
+  <p class="footer-copy">© 2026 ASG App. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
